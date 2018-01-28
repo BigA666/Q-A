@@ -1,0 +1,158 @@
+* 
+    margin: 0
+    padding: 0
+a 
+    color: #999
+    text-decoration: none  
+li 
+    list-style: none
+
+html, body 
+    width: 100% 
+    height: 100% 
+    font-size: 625% 
+body 
+    font-size: .12rem 
+#root 
+    width: 100% 
+    height: 100% 
+    & > div 
+        width: 100% 
+        height: 100%  
+        display: flex 
+        flex-direction: column 
+        header 
+            width: 100% 
+            height: .4rem 
+            background: white 
+            position: relative 
+            i 
+                font-size: 0.12rem 
+                margin-right: 0.05rem 
+            .back 
+                position: absolute 
+                top: 0 
+                left: 0.1rem 
+                line-height: .4rem 
+            h3 
+                line-height: .4rem 
+                text-align: center 
+
+        section 
+            width: 100% 
+            flex: 1
+            overflow-y: scroll
+            position: relative
+
+.index 
+    button 
+        position: absolute
+        bottom: 12%
+        left: 35%
+        width: 40%
+        height: 10%
+        display: block
+        border: none 
+        outline: none
+        background: rgba(0, 0, 0, 0)
+        opacity: 0
+.gender 
+    .genderDiv 
+        width: 100% 
+        display: flex 
+        margin: 0.2rem 0
+        i
+            flex: 1
+            display: flex 
+            flex-direction: column
+            align-items: center 
+            justify-content: center
+            font-size: 0.6rem
+        & > i:nth-child(odd)
+            border-right: 1px solid black
+            color: skyblue
+        & > i:nth-child(even)   
+            color: pink
+    .radioChecked 
+        span 
+            flex-direction: column
+            i
+                margin-bottom: 0.05rem
+
+.hateFood
+    .content
+        border: none
+        width: 70% 
+        margin: 0 auto
+        span 
+            display: inline-block
+            width: 50%
+            margin: 0.1rem auto
+            i
+                margin-right: 0.1rem
+                font-size: 0.2rem
+                vertical-align: middle
+
+.feeling 
+    section 
+        background: url('../images/feelingBg.png') no-repeat center center 
+        background-size: 100% 100%
+        .content
+            height: 80%
+            i 
+                color: red
+                margin-right: 0.05rem
+        .btn 
+            position: absolute 
+            bottom: 7%
+            left: 36%
+            height: 7%
+            width: 30%
+            background: rgba(0, 0, 0, 0)
+            border: none 
+            outline: none
+            opacity: 0
+        .item
+            margin-bottom: 0.2rem
+            p 
+                margin-bottom: 0.1rem
+            span 
+                border: 1px solid #ccc
+                border-radius: 0.02rem
+                display: inline-block 
+                text-align: center
+                padding: 0.05rem 
+                margin-right: 0.1rem
+                i 
+                    display: none
+    .active 
+        background: red 
+        color: white
+.next 
+    position: absolute
+    bottom: 23%
+    left: 32%
+    width: 40%
+    height: 10%
+    display: block
+    border: none 
+    outline: none
+    background: rgba(0, 0, 0, 0)
+    opacity: 0
+.bg 
+    width: 100% 
+    height: 100% 
+    position: absolute
+    z-index: -1
+    
+.disease 
+    .checkbox
+        position: absolute 
+        top: -10%
+.tip 
+    span 
+        display: inline-block 
+        padding: 0.05rem 0.1rem 
+        margin: 0.05rem 
+        box-radius: 0.03rem 
+        border: 1px solid #ccc
